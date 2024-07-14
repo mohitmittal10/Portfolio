@@ -1,0 +1,31 @@
+.structure{
+    
+    height: 100vh;
+    background: #26282a;
+    margin: 15px;
+    color: white;
+}
+
+.round{
+    border-radius: 10px;
+}
+
+.flex{
+    display: flex;
+}
+
+.pad{
+    padding: 20px;
+}
+
+.pad-l{
+    padding-left: 20px;
+}
+
+.pad-l2{
+    padding-left: 40px;
+}
+
+m-l1{
+    margin-left: 20px;
+}
