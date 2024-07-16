@@ -1,7 +1,8 @@
 body{
     background: #000;
     margin: 0px;
-    height: 100vh;
+    height: 100%;
+    width: 100vw;
     font-family: 'Nunito:ital', sans-serif;
     ;
 }
@@ -136,11 +137,17 @@ li{
 .card{
     width: 300px;
     height: 300px;
-    position: absolute;
+    display: grid;
+}
 
 #blog-img{
     width: 270px;
     height: 170px;
     position: relative;
     padding: 10px;
+}
+.card-container{
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 75vh;
 }

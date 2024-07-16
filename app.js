@@ -4,6 +4,10 @@ const elementToHide = document.getElementsByClassName('exp-container');
 Array.from(elementToHide).forEach((el) => {
     el.style.display = 'none';
 })
+const elementToHide2 = document.getElementsByClassName('blog pad-l2');
+Array.from(elementToHide2).forEach((el) => {
+    el.style.display = 'none';
+})
 
 
 //add event listner to experience
@@ -14,7 +18,11 @@ experience.addEventListener('click', function () {
     const elementToDisplay2 = document.getElementsByClassName('experience')
 
     const elementToHide = document.getElementsByClassName('about');
+    const elementToHide2 = document.getElementsByClassName('blog pad-l2');
     Array.from(elementToHide).forEach((el) => {
+        el.style.display = 'none';
+    })
+    Array.from(elementToHide2).forEach((el) => {
         el.style.display = 'none';
     })
 
@@ -38,8 +46,12 @@ const about = document.getElementById('about');
 about.addEventListener('click', function () {
     const elementToDisplay = document.getElementsByClassName('about')
     const elementToHide = document.getElementsByClassName('exp-container');
+    const elementToHide2 = document.getElementsByClassName('blog pad-l2');
     //remove other divs
     Array.from(elementToHide).forEach((el) => {
+        el.style.display = 'none';
+    })
+    Array.from(elementToHide2).forEach((el) => {
         el.style.display = 'none';
     })
 
@@ -59,7 +71,7 @@ about.addEventListener('click', function () {
 const blog = document.getElementById('blog');
 
 blog.addEventListener('click', function(){
-    const elementToDisplay = document.getElementsByClassName('blog')
+    const elementToDisplay = document.getElementsByClassName('blog pad-l2')
     const elementToHide = document.getElementsByClassName('about');
     const elementToHide2 = document.getElementsByClassName('exp-container');
     const elementToHide3 = document.getElementsByClassName('contact');
@@ -73,7 +85,9 @@ blog.addEventListener('click', function(){
     Array.from(elementToHide3).forEach((el) => {
         el.style.display = 'none';
     })
-
+    Array.from(elementToDisplay).forEach((el)=>{
+        el.style.display = 'block';
+    })
     //updating head
     const container = document.getElementById('about-head pad-l2');
     container.innerHTML = `<h1>Blog</h1>`
