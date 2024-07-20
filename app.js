@@ -28,7 +28,13 @@ experience.addEventListener('click', function () {
 
     //updating head
     const container = document.getElementById('about-head pad-l2');
-    container.innerHTML = `<h1>Experience</h1>`
+    container.innerHTML = `<img id="img-exp" src="assests/exp.gif" alt="gif">
+                            <h1 id="exp">Experience</h1>`
+    const imgExp = document.getElementById("img-exp");
+    imgExp.style.width = '55px';
+    imgExp.style.height = '55px';
+    // const exp = document.getElementById("exp");
+    // exp.style.fontSize = '3rem'
 
     //display div
     Array.from(elementToDisplay).forEach((el) => {
@@ -58,7 +64,11 @@ about.addEventListener('click', function () {
 
     //updating head
     const container = document.getElementById('about-head pad-l2');
-    container.innerHTML = `<h1>About Me</h1>`
+    container.innerHTML = `<img id="img-about" src="assests\about-me.gif" alt="gif">
+                            <h1>About Me</h1>`
+                            const imgAbt = document.getElementById("img-about");
+    imgAbt.style.width = '55px';
+    imgAbt.style.height = '55px';
 
     //display div
     Array.from(elementToDisplay).forEach((el) => {
@@ -70,7 +80,7 @@ about.addEventListener('click', function () {
 //add event listner to blog
 const blog = document.getElementById('blog');
 
-blog.addEventListener('click', function(){
+blog.addEventListener('click', function () {
     const elementToDisplay = document.getElementsByClassName('blog pad-l2')
     const elementToHide = document.getElementsByClassName('about');
     const elementToHide2 = document.getElementsByClassName('exp-container');
@@ -85,10 +95,14 @@ blog.addEventListener('click', function(){
     Array.from(elementToHide3).forEach((el) => {
         el.style.display = 'none';
     })
-    Array.from(elementToDisplay).forEach((el)=>{
+    Array.from(elementToDisplay).forEach((el) => {
         el.style.display = 'block';
     })
     //updating head
     const container = document.getElementById('about-head pad-l2');
     container.innerHTML = `<h1>Blog</h1>`
 })
+
+
+
+  

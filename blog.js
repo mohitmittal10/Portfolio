@@ -11,7 +11,7 @@ fetch(url)
   .then(function (data) {
     articles = data.articles;
 
-    for (i = 0; i < articles.length-1; i++) {
+    for (i = 0; i < articles.length - 1; i++) {
       // articles[i].title
       //console.log("Title: " + articles[i]['title']);
       // articles[i].description
@@ -19,13 +19,13 @@ fetch(url)
       //console.log("Content: " + articles[i]['content']);
 
       //creating card that displays blogs
-      
+
       // You can replace {property} below with any of the article properties returned by the API.
       // articles[i].{property}
       // console.log(articles[i]['{property}']);
 
       // Delete this line to display all the articles returned by the request. Currently only the first article is displayed.
-      
+
 
       //creating divs to display api call results
       //create main div with class name card
@@ -39,7 +39,7 @@ fetch(url)
         imgElement.src = articles[i]['image'];
         console.log(articles[i]['image'])
       }
-      
+
       imgElement.alt = "image"
 
       // Create the div for blog title
@@ -60,11 +60,11 @@ fetch(url)
       parent.appendChild(cardDiv);
 
       //add event listner to each card which direct to respective url fetched by api
-      // cardDiv.addEventListener("click", ()=>{
+      cardDiv.addEventListener("click", () => {
 
-      //   window.location.href = articles[i]['source']['url']
+        window.location.href = articles[i]['source']['url']
 
-      // })
+      })
       //console.log(articles[i]['source']['url'])
     }
   });

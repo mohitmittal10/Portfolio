@@ -3,7 +3,7 @@ body{
     margin: 0px;
     height: 100%;
     width: 100vw;
-    font-family: 'Nunito:ital', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     ;
 }
 .nav{
@@ -47,6 +47,11 @@ li{
     padding: 20px;
     width: fit-content;
 }
+div#about-head\ pad-l2{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
 .right-nav{
     justify-content: space-between;
     padding-left: 20px;
@@ -69,7 +74,7 @@ li{
     width: 2px;
     background-color: black;
     margin-top: 3px;
-    background-color: #494a49;
+    background-color: #ffffff0f;
 }
 .line2 {
     display: flex;
@@ -80,17 +85,17 @@ li{
     width: 2px;
     background-color: black;
     margin-top: 3px;
-    background-color: #494a49;
+    background-color: #ffffff0f;
 }
 .bullet {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     background-color: black;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background-color: green;
+    background-color: #83de83;
 }
 .bullet:nth-child(1) {
     top: 0;
@@ -116,14 +121,14 @@ li{
 }
 
 .bullet2 {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     background-color: black;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background-color: green;
+    background-color: #83de83
 }
 
 .bullet2:nth-child(1) {
@@ -150,4 +155,28 @@ li{
     flex-wrap: wrap;
     overflow-y: scroll;
     height: 75vh;
+}
+h1#exp{
+    padding-left: 10px;
+}
+
+.about-info.pad {
+    font-family: 'Inconsolata', sans-serif;
+}
+
+.about-info-3 {
+    padding-top: 25px;
+    width: 399px;
+    display: flex;
+    flex-wrap: wrap;}
+
+p#skills {
+    font-size: 1.7em;
+}
+
+.skill-img{
+    width: 100px;
+    height: 100px;
+    padding-right: 30px;
+    padding-bottom: 15px;
 }

@@ -3,7 +3,7 @@
     height: 100vh;
     background: #26282a;
     margin: 15px;
-    color: white;
+    color: #f0e7e7;;
 }
 
 .round{
@@ -28,4 +28,8 @@
 
 m-l1{
     margin-left: 20px;
+}
+
+.green{
+    color: #b4ff008c;
 }
