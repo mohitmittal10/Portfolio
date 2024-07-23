@@ -64,9 +64,9 @@ about.addEventListener('click', function () {
 
     //updating head
     const container = document.getElementById('about-head pad-l2');
-    container.innerHTML = `<img id="img-about" src="assests\about-me.gif" alt="gif">
+    container.innerHTML = `<img id="img-about" src="assests/about-me.gif" alt="gif">
                             <h1>About Me</h1>`
-                            const imgAbt = document.getElementById("img-about");
+    const imgAbt = document.getElementById("img-about");
     imgAbt.style.width = '55px';
     imgAbt.style.height = '55px';
 
@@ -85,6 +85,7 @@ blog.addEventListener('click', function () {
     const elementToHide = document.getElementsByClassName('about');
     const elementToHide2 = document.getElementsByClassName('exp-container');
     const elementToHide3 = document.getElementsByClassName('contact');
+    const elementToHide4 = document.getElementsByClassName('github-body');
     //remove other divs
     Array.from(elementToHide).forEach((el) => {
         el.style.display = 'none';
@@ -93,6 +94,9 @@ blog.addEventListener('click', function () {
         el.style.display = 'none';
     })
     Array.from(elementToHide3).forEach((el) => {
+        el.style.display = 'none';
+    })
+    Array.from(elementToHide4).forEach((el) => {
         el.style.display = 'none';
     })
     Array.from(elementToDisplay).forEach((el) => {
@@ -104,5 +108,35 @@ blog.addEventListener('click', function () {
 })
 
 
+//event listner for github
+const github = document.getElementById('github');
 
-  
+github.addEventListener('click', function () {
+    const elementToHide0 = document.getElementsByClassName('blog pad-l2')
+    const elementToHide = document.getElementsByClassName('about');
+    const elementToHide2 = document.getElementsByClassName('exp-container');
+    const elementToHide3 = document.getElementsByClassName('contact');
+    const elementToDisplay = document.getElementsByClassName('github-body')
+    //remove other divs
+    Array.from(elementToHide0).forEach((el) => {
+        el.style.display = 'none';
+    })
+    Array.from(elementToHide).forEach((el) => {
+        el.style.display = 'none';
+    })
+    Array.from(elementToHide2).forEach((el) => {
+        el.style.display = 'none';
+    })
+    Array.from(elementToHide3).forEach((el) => {
+        el.style.display = 'none';
+    })
+    Array.from(elementToDisplay).forEach((el) => {
+        el.style.display = 'flex';
+    })
+    //updating head
+    const container = document.getElementById('about-head pad-l2');
+    container.innerHTML = `<h1>GitHub</h1>`
+})
+
+
+

@@ -37,7 +37,7 @@ fetch(url)
       imgElement.id = "blog-img";
       if (articles[i]['image']) {
         imgElement.src = articles[i]['image'];
-        console.log(articles[i]['image'])
+        //console.log(articles[i]['image'])
       }
 
       imgElement.alt = "image"
